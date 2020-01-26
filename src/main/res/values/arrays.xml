@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="player_names_array">
+        <item>Tom Brady</item>
+        <item>Benjamin Watson</item>
+        <item>Lionel Messy</item>
+        <item>David Beckham</item>
+    </string-array>
+
+
+</resources>

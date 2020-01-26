@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/poll_bg_drawable"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:background="@drawable/bg_header_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/poll_header_text"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:id="@+id/progress_circular"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:id="@+id/first_layout"
+        android:layout_below="@+id/title_layout">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:progressDrawable="@drawable/bg_progress_drawable"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="22" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/progress_bar"
+            android:layout_alignTop="@id/progress_bar"
+            android:layout_alignEnd="@id/progress_bar"
+            android:layout_alignBottom="@id/progress_bar"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:id="@+id/first_text"
+            android:gravity="center_vertical"
+            android:text="@string/option_first_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:id="@+id/first_progress_text"
+            android:gravity="center"
+            android:text="@string/first_pro_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:id="@+id/second_layout"
+        android:layout_below="@+id/first_layout">
+
+        <ProgressBar
+            android:id="@+id/second_progress"
+            android:progressDrawable="@drawable/bg_progress_drawable"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="56" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/second_progress"
+            android:layout_alignTop="@id/second_progress"
+            android:layout_alignEnd="@id/second_progress"
+            android:layout_alignBottom="@id/second_progress"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:id="@+id/second_text"
+            android:gravity="center_vertical"
+            android:text="@string/option_second_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:id="@+id/second_progress_text"
+            android:gravity="center"
+            android:text="@string/sec_pro_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:id="@+id/third_layout"
+        android:layout_below="@+id/second_layout">
+
+        <ProgressBar
+            android:id="@+id/third_progress"
+            android:progressDrawable="@drawable/bg_progress_drawable"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="8" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/third_progress"
+            android:layout_alignTop="@id/third_progress"
+            android:layout_alignEnd="@id/third_progress"
+            android:layout_alignBottom="@id/third_progress"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:id="@+id/third_text"
+            android:gravity="center_vertical"
+            android:text="@string/option_third_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:id="@+id/third_progress_text"
+            android:gravity="center"
+            android:text="@string/third_pro_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:id="@+id/fourth_layout"
+        android:layout_below="@+id/third_layout">
+
+        <ProgressBar
+            android:id="@+id/fourth_progress"
+            android:progressDrawable="@drawable/bg_progress_disable"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="14" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/fourth_progress"
+            android:layout_alignTop="@id/fourth_progress"
+            android:layout_alignEnd="@id/fourth_progress"
+            android:layout_alignBottom="@id/fourth_progress"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:id="@+id/fourth_text"
+            android:gravity="center_vertical"
+            android:text="@string/option_fourth_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:id="@+id/fourth_progress_text"
+            android:gravity="center"
+            android:text="@string/fourth_pro_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

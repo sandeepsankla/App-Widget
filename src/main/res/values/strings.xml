@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppWidget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="poll_header_text">Is this eli mannings last game with the Giants?</string>
+    <string name="option_first_text">For Sure Hes is done.</string>
+    <string name="option_second_text">He still has lot left in tank.</string>
+    <string name="option_third_text">I am not interested…</string>
+    <string name="option_fourth_text">Who? Is he still playing?</string>
+    <string name="sec_pro_text">56%</string>
+    <string name="first_pro_text">22%</string>
+    <string name="third_pro_text">8%</string>
+    <string name="fourth_pro_text">14%</string>
+
+
+</resources>
